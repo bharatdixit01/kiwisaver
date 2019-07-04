@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="80.201255">
+<testcase classname="Validating kiwi saver retirement calculator" name="Calculate KiwiSaver returement projected balance" time="80.201255">
+<system-out><![CDATA[Given User invoke application...............................................passed
+And User navigate kiwisaver retirement calculators page.....................passed
+Then User validate infomation icons of all fields available on the page.....passed
+Given User enters Current age "30"..........................................passed
+And selects "Employed"......................................................passed
+And enters "82000"..........................................................passed
+And select "4%".............................................................passed
+And select PIR "17.5%"......................................................passed
+And enters current kiwisaver balance "".....................................passed
+And enters voluntary contributions "" and ""................................passed
+And selects risk profile "High".............................................passed
+And enters saving goal ""...................................................passed
+And clicks on View your Kiwisaver retirement projections button.............passed
+Then Kiwisaver retirement projections display...............................passed
+]]></system-out>
+</testcase>
+</testsuite>

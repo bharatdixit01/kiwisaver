@@ -1,0 +1,37 @@
+@kiwisaver
+Feature: Validating kiwi saver retirement calculator
+
+  @Execute
+  Scenario Outline: Calculate KiwiSaver returement projected balance                 # KiwiSaverCalculator.feature:18
+    Given User enters Current age "<current age>"
+    And selects "<employment status>"
+    And enters "<salary>"
+    And select "<member contribution>"
+    And select PIR "<PIR>"
+    And enters current kiwisaver balance "<current kiwisaver balance>"
+    And enters voluntary contributions "<Voluntary contributions>" and "<Frequency>"
+    And selects risk profile "<risk profile>"
+    And enters saving goal "<savings goal>"
+    And clicks on View your Kiwisaver retirement projections button
+    Then Kiwisaver retirement projections display
+
+    Examples: 
+
+  Background: Navigating to kiwisaver retirement calculator page            # KiwiSaverCalculator.feature:4
+    Given User invoke application                                           # KiwiSaverCalculatorStepDefinition.user_invoke_application()
+    And User navigate kiwisaver retirement calculators page                 # KiwiSaverCalculatorStepDefinition.user_navigate_kiwisaver_retirement_calculators_page()
+    Then User validate infomation icons of all fields available on the page # KiwiSaverCalculatorStepDefinition.user_validate_infomation_icons_of_all_fields_available_on_the_page()
+
+  @kiwisaver @Execute
+  Scenario Outline: Calculate KiwiSaver returement projected balance # KiwiSaverCalculator.feature:34
+    Given User enters Current age "30"                               # KiwiSaverCalculatorStepDefinition.user_enters_Current_age(String)
+    And selects "Employed"                                           # KiwiSaverCalculatorStepDefinition.selects(String)
+    And enters "82000"                                               # KiwiSaverCalculatorStepDefinition.enters(String)
+    And select "4%"                                                  # KiwiSaverCalculatorStepDefinition.select(String)
+    And select PIR "17.5%"                                           # KiwiSaverCalculatorStepDefinition.select_PIR(String)
+    And enters current kiwisaver balance ""                          # KiwiSaverCalculatorStepDefinition.enters_current_kiwisaver_balance(String)
+    And enters voluntary contributions "" and ""                     # KiwiSaverCalculatorStepDefinition.enters_voluntary_contributions_and(String,String)
+    And selects risk profile "High"                                  # KiwiSaverCalculatorStepDefinition.selects_risk_profile(String)
+    And enters saving goal ""                                        # KiwiSaverCalculatorStepDefinition.enters_saving_goal(String)
+    And clicks on View your Kiwisaver retirement projections button  # KiwiSaverCalculatorStepDefinition.clicks_on_View_your_Kiwisaver_retirement_projections_button()
+    Then Kiwisaver retirement projections display                    # KiwiSaverCalculatorStepDefinition.kiwisaver_retirement_projections_display()

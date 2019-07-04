@@ -1,0 +1,301 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Navigating to kiwisaver retirement calculator page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 36095312500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User invoke application",
+            "match": {
+              "location": "KiwiSaverCalculatorStepDefinition.user_invoke_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17867063100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigate kiwisaver retirement calculators page",
+            "match": {
+              "location": "KiwiSaverCalculatorStepDefinition.user_navigate_kiwisaver_retirement_calculators_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26234448900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User validate infomation icons of all fields available on the page",
+            "match": {
+              "location": "KiwiSaverCalculatorStepDefinition.user_validate_infomation_icons_of_all_fields_available_on_the_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Calculate KiwiSaver returement projected balance",
+        "description": "",
+        "id": "validating-kiwi-saver-retirement-calculator;calculate-kiwisaver-returement-projected-balance;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3607900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enters Current age \"30\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 25
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.user_enters_Current_age(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 93200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "selects \"Employed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Employed",
+                  "offset": 9
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.selects(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "enters \"82000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "82000",
+                  "offset": 8
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.enters(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "select \"4%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4%",
+                  "offset": 8
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.select(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "select PIR \"17.5%\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17.5%",
+                  "offset": 12
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.select_PIR(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "enters current kiwisaver balance \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 34
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.enters_current_kiwisaver_balance(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "enters voluntary contributions \"\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 32
+                },
+                {
+                  "val": "",
+                  "offset": 39
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.enters_voluntary_contributions_and(String,String)"
+            },
+            "matchedColumns": [
+              6,
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "selects risk profile \"High\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "High",
+                  "offset": 22
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.selects_risk_profile(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "enters saving goal \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 20
+                }
+              ],
+              "location": "KiwiSaverCalculatorStepDefinition.enters_saving_goal(String)"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "clicks on View your Kiwisaver retirement projections button",
+            "match": {
+              "location": "KiwiSaverCalculatorStepDefinition.clicks_on_View_your_Kiwisaver_retirement_projections_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Kiwisaver retirement projections display",
+            "match": {
+              "location": "KiwiSaverCalculatorStepDefinition.kiwisaver_retirement_projections_display()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@kiwisaver"
+          },
+          {
+            "line": 17,
+            "name": "@Execute"
+          }
+        ]
+      }
+    ],
+    "name": "Validating kiwi saver retirement calculator",
+    "description": "",
+    "id": "validating-kiwi-saver-retirement-calculator",
+    "keyword": "Feature",
+    "uri": "KiwiSaverCalculator.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@kiwisaver"
+      }
+    ]
+  }
+]
