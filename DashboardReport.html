@@ -59,7 +59,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 5, 2019 07:10:14 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 5, 2019 07:14:06 PM</span>
 				</a>
 			</li>
 			<li>
@@ -165,7 +165,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -177,10 +177,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='93.333%'><span class='strong'>14</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='93.333%'><span class='strong'>42</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -197,12 +197,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Validating kiwi saver retirement calculator</span>
-						<span class='test-time'>Jul 5, 2019 07:10:14 PM</span>
+						<span class='test-time'>Jul 5, 2019 07:14:06 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 1m 27s+274ms</span>
+	<span class='duration right label'>0h 3m 54s+362ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Calculate KiwiSaver returement projected balance</span>
@@ -232,39 +232,39 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='7' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given User enters Current age "45"</span>
+						<span class="bdd-step-name">Given User enters Current age "30"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='8' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And selects employment status  "Self-employed"</span>
+						<span class="bdd-step-name">And selects employment status  "Employed"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='9' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And enters salary wages "null"</span>
+						<span class="bdd-step-name">And enters salary wages "82000"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='10' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And select member contribution "null"</span>
+						<span class="bdd-step-name">And select member contribution "4%"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='11' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And select PIR "10.5%"</span>
+						<span class="bdd-step-name">And select PIR "17.5%"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='12' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And enters current kiwisaver balance "$100000"</span>
+						<span class="bdd-step-name">And enters current kiwisaver balance "null"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='13' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And enters voluntary contributions "$90" and "Fortnightly"</span>
+						<span class="bdd-step-name">And enters voluntary contributions "null" and "null"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='14' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And selects risk profile "Medium"</span>
+						<span class="bdd-step-name">And selects risk profile "High"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='15' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And enters saving goal "$290000"</span>
+						<span class="bdd-step-name">And enters saving goal "null"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='16' class='node and pass' status='pass'><b>And</b>
@@ -276,6 +276,178 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='18' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And User close browser</span>
+							<div class='pre'><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)
+	at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)
+	at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)
+	at ?.And User close browser(KiwiSaverCalculator.feature:31)
+</pre></div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='19' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@kiwisaver</span>
+				<span class='category label white-text'>@Execute</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Calculate KiwiSaver returement projected balance</span>
+			
+				<ul class='steps'>
+					<li test-id='20' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User invoke application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User navigate kiwisaver retirement calculators page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User validate infomation icons of all fields available on the page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='23' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User enters Current age "45"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='24' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And selects employment status  "Self-employed"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='25' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters salary wages "null"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='26' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And select member contribution "null"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And select PIR "10.5%"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters current kiwisaver balance "$100000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='29' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters voluntary contributions "$90" and "Fortnightly"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='30' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And selects risk profile "Medium"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='31' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters saving goal "$290000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='32' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And clicks on View your Kiwisaver retirement projections button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='33' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Kiwisaver retirement projections display</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='34' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And User close browser</span>
+							<div class='pre'><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)
+	at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)
+	at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)
+	at ?.And User close browser(KiwiSaverCalculator.feature:31)
+</pre></div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='35' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@kiwisaver</span>
+				<span class='category label white-text'>@Execute</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Calculate KiwiSaver returement projected balance</span>
+			
+				<ul class='steps'>
+					<li test-id='36' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User invoke application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='37' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User navigate kiwisaver retirement calculators page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='38' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User validate infomation icons of all fields available on the page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='39' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User enters Current age "55"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='40' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And selects employment status  "Not employed"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='41' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters salary wages "null"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='42' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And select member contribution "null"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='43' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And select PIR "10.5%"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='44' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters current kiwisaver balance "$140000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='45' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters voluntary contributions "$10" and "Annually"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='46' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And selects risk profile "Medium"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='47' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And enters saving goal "$200000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='48' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And clicks on View your Kiwisaver retirement projections button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='49' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Kiwisaver retirement projections display</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='50' class='node and fail' status='fail'><b>And</b>
 						<span class="bdd-step-name">And User close browser</span>
 							<div class='pre'><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
@@ -352,13 +524,13 @@ Driver info: driver.version: RemoteWebDriver
 					<div class='category-heading'>
 						<span class='category-name'>@kiwisaver</span>
 						<span class='category-status right'>
-							<span class='label fail'>2</span>
+							<span class='label fail'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 4</span>
 							
 						</div>
 					
@@ -373,13 +545,23 @@ Driver info: driver.version: RemoteWebDriver
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 5, 2019 07:10:14 PM</td>
+										<td>Jul 5, 2019 07:14:06 PM</td>
 										<td class='linked' test-id='1'>Validating kiwi saver retirement calculator</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 5, 2019 07:10:14 PM</td>
+										<td>Jul 5, 2019 07:14:06 PM</td>
 										<td class='linked' test-id='3'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 5, 2019 07:15:22 PM</td>
+										<td class='linked' test-id='19'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 5, 2019 07:16:46 PM</td>
+										<td class='linked' test-id='35'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -391,13 +573,13 @@ Driver info: driver.version: RemoteWebDriver
 					<div class='category-heading'>
 						<span class='category-name'>@Execute</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label fail'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
 							
 						</div>
 					
@@ -412,8 +594,18 @@ Driver info: driver.version: RemoteWebDriver
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 5, 2019 07:10:14 PM</td>
+										<td>Jul 5, 2019 07:14:06 PM</td>
 										<td class='linked' test-id='3'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 5, 2019 07:15:22 PM</td>
+										<td class='linked' test-id='19'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 5, 2019 07:16:46 PM</td>
+										<td class='linked' test-id='35'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -461,7 +653,7 @@ Driver info: driver.version: RemoteWebDriver
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>org.openqa.selenium.remote.SessionNotFoundException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -475,8 +667,44 @@ Driver info: driver.version: RemoteWebDriver
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 5, 2019 07:11:41 PM</td>
+                                                        <td>Jul 5, 2019 07:15:21 PM</td>
                                                         <td class='linked' test-id='18'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance.And User close browser</td>
+                                                        <td><pre><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)
+	at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)
+	at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)
+	at ?.And User close browser(KiwiSaverCalculator.feature:31)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jul 5, 2019 07:16:45 PM</td>
+                                                        <td class='linked' test-id='34'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance.And User close browser</td>
+                                                        <td><pre><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)
+	at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)
+	at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)
+	at ?.And User close browser(KiwiSaverCalculator.feature:31)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jul 5, 2019 07:17:59 PM</td>
+                                                        <td class='linked' test-id='50'>Validating kiwi saver retirement calculator.Calculate KiwiSaver returement projected balance.Calculate KiwiSaver returement projected balance.And User close browser</td>
                                                         <td><pre><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
@@ -522,31 +750,31 @@ Driver info: driver.version: RemoteWebDriver
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>15</div>
+					<div class='panel-lead'>45</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 5, 2019 07:10:14 PM</div>
+					<div class='panel-lead'>Jul 5, 2019 07:14:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 5, 2019 07:11:42 PM</div>
+			 		<div class='panel-lead'>Jul 5, 2019 07:18:01 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 27s+676ms</div>
+					<div class='panel-lead'>0h 3m 55s+104ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -564,7 +792,7 @@ Driver info: driver.version: RemoteWebDriver
 						<tr>
 							<td>@kiwisaver</td>
 							<td>0</td>
-							<td>2</td>
+							<td>4</td>
 							<td>0</td>
 							<td>
 									0%
@@ -573,7 +801,7 @@ Driver info: driver.version: RemoteWebDriver
 						<tr>
 							<td>@Execute</td>
 							<td>0</td>
-							<td>1</td>
+							<td>3</td>
 							<td>0</td>
 							<td>
 									0%
@@ -601,22 +829,22 @@ Driver info: driver.version: RemoteWebDriver
 				exceptionsParent: 1,
 				
 				passChild: 0,
-				failChild: 1,
+				failChild: 3,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 3,
 				
-				passGrandChild: 14,
-				failGrandChild: 1,
+				passGrandChild: 42,
+				failGrandChild: 3,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 3,
 			};
 		</script>
 		

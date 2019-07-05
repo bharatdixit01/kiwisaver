@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="87.174369">
-<testcase classname="Validating kiwi saver retirement calculator" name="Calculate KiwiSaver returement projected balance" time="87.174369">
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="234.188431">
+<testcase classname="Validating kiwi saver retirement calculator" name="Calculate KiwiSaver returement projected balance" time="76.198528">
+<failure message="org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)&#13;&#10;&#9;at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)&#13;&#10;&#9;at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)&#13;&#10;&#9;at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)&#13;&#10;&#9;at ✽.And User close browser(KiwiSaverCalculator.feature:31)&#13;&#10;"><![CDATA[Given User invoke application...............................................passed
+And User navigate kiwisaver retirement calculators page.....................passed
+Then User validate infomation icons of all fields available on the page.....passed
+Given User enters Current age "30"..........................................passed
+And selects employment status  "Employed"...................................passed
+And enters salary wages "82000".............................................passed
+And select member contribution "4%".........................................passed
+And select PIR "17.5%"......................................................passed
+And enters current kiwisaver balance "null".................................passed
+And enters voluntary contributions "null" and "null"........................passed
+And selects risk profile "High".............................................passed
+And enters saving goal "null"...............................................passed
+And clicks on View your Kiwisaver retirement projections button.............passed
+Then Kiwisaver retirement projections display...............................passed
+And User close browser......................................................failed
+
+StackTrace:
+org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)
+	at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)
+	at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)
+	at ✽.And User close browser(KiwiSaverCalculator.feature:31)
+]]></failure>
+</testcase>
+<testcase classname="Validating kiwi saver retirement calculator" name="Calculate KiwiSaver returement projected balance 2" time="83.698207">
 <failure message="org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)&#13;&#10;&#9;at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)&#13;&#10;&#9;at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)&#13;&#10;&#9;at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)&#13;&#10;&#9;at ✽.And User close browser(KiwiSaverCalculator.feature:31)&#13;&#10;"><![CDATA[Given User invoke application...............................................passed
 And User navigate kiwisaver retirement calculators page.....................passed
 Then User validate infomation icons of all fields available on the page.....passed
@@ -13,6 +46,39 @@ And enters current kiwisaver balance "$100000"..............................pass
 And enters voluntary contributions "$90" and "Fortnightly"..................passed
 And selects risk profile "Medium"...........................................passed
 And enters saving goal "$290000"............................................passed
+And clicks on View your Kiwisaver retirement projections button.............passed
+Then Kiwisaver retirement projections display...............................passed
+And User close browser......................................................failed
+
+StackTrace:
+org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)
+	at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)
+	at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)
+	at ✽.And User close browser(KiwiSaverCalculator.feature:31)
+]]></failure>
+</testcase>
+<testcase classname="Validating kiwi saver retirement calculator" name="Calculate KiwiSaver returement projected balance 3" time="74.291696">
+<failure message="org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)&#13;&#10;&#9;at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)&#13;&#10;&#9;at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)&#13;&#10;&#9;at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)&#13;&#10;&#9;at ✽.And User close browser(KiwiSaverCalculator.feature:31)&#13;&#10;"><![CDATA[Given User invoke application...............................................passed
+And User navigate kiwisaver retirement calculators page.....................passed
+Then User validate infomation icons of all fields available on the page.....passed
+Given User enters Current age "55"..........................................passed
+And selects employment status  "Not employed"...............................passed
+And enters salary wages "null"..............................................passed
+And select member contribution "null".......................................passed
+And select PIR "10.5%"......................................................passed
+And enters current kiwisaver balance "$140000"..............................passed
+And enters voluntary contributions "$10" and "Annually".....................passed
+And selects risk profile "Medium"...........................................passed
+And enters saving goal "$200000"............................................passed
 And clicks on View your Kiwisaver retirement projections button.............passed
 Then Kiwisaver retirement projections display...............................passed
 And User close browser......................................................failed
