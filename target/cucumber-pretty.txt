@@ -4,9 +4,9 @@ Feature: Validating kiwi saver retirement calculator
   @Execute
   Scenario Outline: Calculate KiwiSaver returement projected balance                 # KiwiSaverCalculator.feature:18
     Given User enters Current age "<current age>"
-    And selects "<employment status>"
-    And enters "<salary>"
-    And select "<member contribution>"
+    And selects employment status  "<employment status>"
+    And enters salary wages "<salary>"
+    And select member contribution "<member contribution>"
     And select PIR "<PIR>"
     And enters current kiwisaver balance "<current kiwisaver balance>"
     And enters voluntary contributions "<Voluntary contributions>" and "<Frequency>"
@@ -14,6 +14,7 @@ Feature: Validating kiwi saver retirement calculator
     And enters saving goal "<savings goal>"
     And clicks on View your Kiwisaver retirement projections button
     Then Kiwisaver retirement projections display
+    And User close browser
 
     Examples: 
 
@@ -22,16 +23,32 @@ Feature: Validating kiwi saver retirement calculator
     And User navigate kiwisaver retirement calculators page                 # KiwiSaverCalculatorStepDefinition.user_navigate_kiwisaver_retirement_calculators_page()
     Then User validate infomation icons of all fields available on the page # KiwiSaverCalculatorStepDefinition.user_validate_infomation_icons_of_all_fields_available_on_the_page()
 
+  #| 30					|	Employed					| 82000		|4%										| 17.5%	|null|null|null|	High				|null|
   @kiwisaver @Execute
-  Scenario Outline: Calculate KiwiSaver returement projected balance # KiwiSaverCalculator.feature:34
-    Given User enters Current age "30"                               # KiwiSaverCalculatorStepDefinition.user_enters_Current_age(String)
-    And selects "Employed"                                           # KiwiSaverCalculatorStepDefinition.selects(String)
-    And enters "82000"                                               # KiwiSaverCalculatorStepDefinition.enters(String)
-    And select "4%"                                                  # KiwiSaverCalculatorStepDefinition.select(String)
-    And select PIR "17.5%"                                           # KiwiSaverCalculatorStepDefinition.select_PIR(String)
-    And enters current kiwisaver balance ""                          # KiwiSaverCalculatorStepDefinition.enters_current_kiwisaver_balance(String)
-    And enters voluntary contributions "" and ""                     # KiwiSaverCalculatorStepDefinition.enters_voluntary_contributions_and(String,String)
-    And selects risk profile "High"                                  # KiwiSaverCalculatorStepDefinition.selects_risk_profile(String)
-    And enters saving goal ""                                        # KiwiSaverCalculatorStepDefinition.enters_saving_goal(String)
+  Scenario Outline: Calculate KiwiSaver returement projected balance # KiwiSaverCalculator.feature:36
+    Given User enters Current age "45"                               # KiwiSaverCalculatorStepDefinition.user_enters_Current_age(String)
+    And selects employment status  "Self-employed"                   # KiwiSaverCalculatorStepDefinition.selects_employment_status(String)
+    And enters salary wages "null"                                   # KiwiSaverCalculatorStepDefinition.enters_salary_wages(String)
+    And select member contribution "null"                            # KiwiSaverCalculatorStepDefinition.select_member_contribution(String)
+    And select PIR "10.5%"                                           # KiwiSaverCalculatorStepDefinition.select_PIR(String)
+    And enters current kiwisaver balance "$100000"                   # KiwiSaverCalculatorStepDefinition.enters_current_kiwisaver_balance(String)
+    And enters voluntary contributions "$90" and "Fortnightly"       # KiwiSaverCalculatorStepDefinition.enters_voluntary_contributions_and(String,String)
+    And selects risk profile "Medium"                                # KiwiSaverCalculatorStepDefinition.selects_risk_profile(String)
+    And enters saving goal "$290000"                                 # KiwiSaverCalculatorStepDefinition.enters_saving_goal(String)
     And clicks on View your Kiwisaver retirement projections button  # KiwiSaverCalculatorStepDefinition.clicks_on_View_your_Kiwisaver_retirement_projections_button()
     Then Kiwisaver retirement projections display                    # KiwiSaverCalculatorStepDefinition.kiwisaver_retirement_projections_display()
+    And User close browser                                           # KiwiSaverCalculatorStepDefinition.user_close_browser()
+      org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+      Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+      System info: host: 'DESKTOP-KVFT8E4', ip: '169.254.192.81', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+      	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+      	at utility.ConfigUtility.fnCaptureEncodedImage(ConfigUtility.java:82)
+      	at utility.ConfigUtility.fnGenerateReport(ConfigUtility.java:62)
+      	at stepDefinition.KiwiSaverCalculatorStepDefinition.user_close_browser(KiwiSaverCalculatorStepDefinition.java:177)
+      	at ✽.And User close browser(KiwiSaverCalculator.feature:31)
+

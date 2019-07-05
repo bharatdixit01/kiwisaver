@@ -46,7 +46,7 @@ public class TestRunner extends KiwiSaverCalculatorStepDefinition {
 		@AfterClass
 		public static void fnAfterClassMethod() throws IOException
 		{
-			KiwiSaverCalculatorStepDefinition.driver.quit();
+//			KiwiSaverCalculatorStepDefinition.driver.quit();
 			ConfigUtility.fnFinishReportTemplate();
 			Reporter.loadXMLConfig("D://EclipseWorkSpace//westpac//extent-config.xml");	
 			ConfigUtility.extentlogger.log(LogStatus.PASS, "****** Test Case End Here *******");

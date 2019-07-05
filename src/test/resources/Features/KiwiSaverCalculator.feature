@@ -18,9 +18,9 @@ Feature: Validating kiwi saver retirement calculator
   	Scenario Outline: Calculate KiwiSaver returement projected balance
   	
   	Given User enters Current age "<current age>"
-  	And selects "<employment status>"
-  	And enters "<salary>"
-  	And select "<member contribution>"
+  	And selects employment status  "<employment status>"
+  	And enters salary wages "<salary>"
+  	And select member contribution "<member contribution>"
   	And select PIR "<PIR>"
   	And enters current kiwisaver balance "<current kiwisaver balance>"
   	And enters voluntary contributions "<Voluntary contributions>" and "<Frequency>"
@@ -28,9 +28,10 @@ Feature: Validating kiwi saver retirement calculator
   	And enters saving goal "<savings goal>"
   	And clicks on View your Kiwisaver retirement projections button
   	Then Kiwisaver retirement projections display
+  	And User close browser
   	
   	Examples:
   	| current age | employment status	| salary	| member contribution | PIR		| current kiwisaver balance | Voluntary contributions | Frequency | risk profile| savings goal |
-  	| 30					|	Employed					| 82000		|4%										| 17.5%	|														|													|						|	High				|							 |
-   #|	45					| Self-employed			|					|											|10.5%	|	$100000										|		$90										|Fortnightly| Medium			|$290000			|
-   #| 55					| Not employed			|					|											|10.5%	| $140000										|		$10										|Annually		|	Medium			|$200000			|
+  	| 30					|	Employed					| 82000		|4%										| 17.5%	|null|null|null|	High				|null|
+    |	45					| Self-employed			|		null	|			null								|10.5%	|	$100000										|		$90										|Fortnightly| Medium			|$290000			|
+    | 55					| Not employed			|		null			|		null									|10.5%	| $140000										|		$10										|Annually		|	Medium			|$200000			|

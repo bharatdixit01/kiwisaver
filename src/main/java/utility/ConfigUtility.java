@@ -4,11 +4,16 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import junit.framework.Assert;
+import stepDefinition.KiwiSaverCalculatorStepDefinition;
 
 public class ConfigUtility {
 	
@@ -54,7 +59,7 @@ public class ConfigUtility {
 	{
 		if(status)
 		{
-			ConfigUtility.extentlogger.log(LogStatus.PASS, logmessage);
+			ConfigUtility.extentlogger.log(LogStatus.PASS, logmessage+ConfigUtility.extentlogger.addScreenCapture(ConfigUtility.fnCaptureEncodedImage()));
 			org.junit.Assert.assertEquals(logmessage, true, true);
 		}
 		else
@@ -71,4 +76,11 @@ public class ConfigUtility {
 		ConfigUtility.extentreport.close();
 	}
 
+	public static String fnCaptureEncodedImage()
+	{
+	TakesScreenshot newscrnshot = (TakesScreenshot)KiwiSaverCalculatorStepDefinition.driver;
+	String scrnshot = newscrnshot.getScreenshotAs(OutputType.BASE64);
+	return "data:image/jpg;base64, "+scrnshot;
+	}
+	
 }
