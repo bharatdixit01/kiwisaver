@@ -1,0 +1,16 @@
+Project Name: Westpac KiwiSaver Retirement Calculator
+
+Automation Tool & Technologies Used: Eclipse, Selenium with BDD Cucumber using Java, Maven
+
+Steps to execute the test and project settings information:
+
+1. Download/ clone project from github https://github.com/bharatdixit01/kiwisaver
+2. Open project in Selenium.
+3. pom.xlm contains all build configuration settings required for project build setup.
+4. Project is created to be executed in chrome browser. Please update chrome driver path in "KiwiSaverCalculatorStepDefinition" stepdefinition file placed under westpac--> src/main/java--> stepDefinition folder.
+5. Project is created using object repository concept for storing objects required for project execution. westpac--> src/main/java--> objectrepo
+6. Config.properties file contains driver name, base/application url, implicit wait time and page load time setting. Please update config filepath in ConfigUtility file placed under westpac--> src/main/java--> utility folder.
+7. Feature file is placed in westpac--> src/test/resources--> Features folder.
+8. For reporting purpose extent report is used. Post execution reports will be generated and saved under westpac--> target folder.
+9. TestRunner sheet is placed in westpac--> src/test/java--> MyRunner folder.
+
